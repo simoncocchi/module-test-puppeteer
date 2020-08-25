@@ -14,7 +14,7 @@ describe("Tests basiques", () => {
         const html = await page.$eval('body', e => e.innerHTML);
         // vérifier que dans cet élément Body on trouve "Polr du campus"
         await page.screenshot({path: './tests/img/basic-home.png'});
-        expect(html).toContain("Polr - Campus Annecy")
+        expect(html).toContain("Polr - Campus Valence")
     }, timeout);
 
     // parcours client avec about

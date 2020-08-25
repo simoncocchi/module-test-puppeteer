@@ -7,7 +7,7 @@ describe("Tests basiques", () => {
     // vérification du chargement de la page d'accueil
     test('home', async () => {
         // charger la page d'accueil
-        await page.goto('http://polr.stationmyr.net.net');
+        await page.goto('http://polr.stationmyr.net');
         // attendre que l'élément <body> soit chargé
         await page.waitForSelector('body');
         // récupérer le contenu de l'élément <body>

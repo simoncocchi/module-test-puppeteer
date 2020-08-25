@@ -7,7 +7,7 @@ describe("Tests basiques", () => {
     // vérification du chargement de la page d'accueil
     test('home', async () => {
         // charger la page d'accueil
-        await page.goto('http://polr.alwaysdata.net');
+        await page.goto('http://polr.stationmyr.net.net');
         // attendre que l'élément <body> soit chargé
         await page.waitForSelector('body');
         // récupérer le contenu de l'élément <body>
@@ -19,7 +19,7 @@ describe("Tests basiques", () => {
 
     // parcours client avec about
     test('home and about', async () => {
-        await page.goto('http://polr.alwaysdata.net');
+        await page.goto('http://polr.stationmyr.net');
         await page.waitForSelector('#navbar li a');
         // click sur le lien "About" de la navigation
         await page.evaluate( () => {

@@ -32,6 +32,7 @@ describe("Tests basiques", () => {
         // on récupère le code HTML
         const html = await page.$eval('.about-contents', e => e.innerHTML);
         // on vérifie qu'il contient la bonne chaîne de caractères
+        await page.screenshot({path: './tests/img/basic-about.png'});
         expect(html).toContain("powered by Polr 2");
     }, timeout);
 
